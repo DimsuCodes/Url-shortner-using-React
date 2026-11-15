@@ -1,3 +1,7 @@
+import ThemeToggle from "./ThemeToggle";
+
+
+
 function Header() {
   return (
     <header>
@@ -9,8 +13,8 @@ function Header() {
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#resources">Resources</a></li>
         </ul>
-
         <div className="navAuth">
+          <ThemeToggle />
           <a href="#login">Login</a>
           <a href="#signup" className="signUpButton">Sign Up</a>
         </div>
