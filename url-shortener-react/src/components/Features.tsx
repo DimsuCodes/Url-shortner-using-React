@@ -19,7 +19,7 @@ const features: Feature[] = [
         text: "Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."
     }, {
         id: 3,
-        icon: "/images/icon-brand-recognition (2).svg",
+        icon: "/images/icon-brand-recognition.svg",
         title: "Fully Customizable",
         text: "Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."
     }
