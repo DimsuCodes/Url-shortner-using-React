@@ -37,7 +37,7 @@ export default function Features() {
             <h2>{title}</h2>
             <p>{text}</p>
             {features.map((feature) => (
-                <FeatureCard key={ } icon={ } title={ } text={ } />
+                <FeatureCard key={feature.id} icon={ feature.icon} title={feature.title } text={feature.text } />
             ))}
         </section>
     );
