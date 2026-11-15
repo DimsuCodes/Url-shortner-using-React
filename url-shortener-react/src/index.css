@@ -7,6 +7,7 @@
   --grayish-violet: hsl(257, 7%, 63%);
   --very-dark-blue: hsl(255, 11%, 22%);
   --bg: hsl(0, 0%, 96%);
+  --card: #fff;
 }
 
 *,
@@ -69,7 +70,7 @@ input[type="submit"]:hover,
 /* ---------- Header / nav ---------- */
 header {
   padding: 24px 24px 0;
-  background: #fff;
+  background: var(--card);
 }
 
 nav {
@@ -116,7 +117,7 @@ main > section {
   flex-direction: column-reverse;
   align-items: center;
   gap: 24px;
-  background: #fff;
+  background: var(--card);
   text-align: center;
   overflow: hidden;
 }
@@ -189,7 +190,7 @@ main > section:nth-of-type(3) {
 #urlList li {
   display: flex;
   flex-direction: column;
-  background: #fff;
+  background:var(--card);
   border-radius: 6px;
   overflow: hidden;
   word-break: break-all;
@@ -262,8 +263,11 @@ main > section:nth-of-type(3) {
 
 
 body.dark {
-  background: black;
-  color:  white;
+  --bg: rgb(20, 19, 19);
+  --card: rgb(29, 28, 28);
+  --very-dark-blue: rgb(198, 198, 228);
+  --cyan: rgb(19, 17, 17);        
+  --cyan-hover: rgb(32, 31, 31); 
 }
 
 #errorMessage { color: hsl(0, 87%, 67%); }
