@@ -32,7 +32,7 @@ export default function Footer() {
             <div>
                 <a href="#"><img src="/images/icon-facebook.svg" alt="Facebook"/></a>
                 <a href="#"><img src="/images/icon-twitter.svg" alt="Twitter"/></a>
-                <a href="#"><img src="/images/icon-twitter.svg" alt="Pinterest"/></a>
+                <a href="#"><img src="/images/icon-pinterest.svg" alt="Pinterest"/></a>
                 <a href="#"><img src="/images/icon-instagram.svg" alt="Instagram"/></a>
             </div>
 
