@@ -38,7 +38,7 @@ export default function Footer() {
 
             <p className="attribution">
                 Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-                Coded by <a href="#">DimsuCodes</a>.
+                Coded by <a href="https://github.com/DimsuCodes" target="_blank" rel="noreferrer">DimsuCodes</a>.
             </p>
             </footer>
             )
