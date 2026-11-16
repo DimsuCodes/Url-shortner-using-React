@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import ShortenForm from "./components/ShortenedForm";
 import type { ShortLink } from "./types";
+import LinkItem from './components/LinkItem';
 
 function App() {
   const [links, setLinks] = useLocalStorage<ShortLink[]>("shortenedUrls", []);
@@ -22,15 +23,11 @@ function App() {
       <main>
         <Hero />
         <ShortenForm onShorten={addLink} />
-
         {/* the list of links (Part 3 turns each one into its own component with a copy button) */}
         <section>
           <ul id="urlList">
             {links.map((link) => (
-              <li key={link.id}>
-                <div>{link.longUrl}</div>
-                <div>{link.shortUrl}</div>
-              </li>
+             <LinkItem key={link.id} link={link} />
             ))}
           </ul>
         </section>

@@ -16,7 +16,7 @@ export default function LinkItem({ link }: LinkItemProps) {
   return (
     <li>
       <div>{link.longUrl}</div>
-      <div>{link.longUrl}</div>
+      <div>{link.shortUrl}</div>
       <button onClick={handleCopy}>{copied ? "Copied!" : "Copy"}</button>
     </li>
   );
