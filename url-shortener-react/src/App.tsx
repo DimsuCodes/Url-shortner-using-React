@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useLocalStorage } from './hooks/useLocalStorage';
 import Boost from "./components/Boost";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
@@ -8,8 +8,7 @@ import ShortenForm from "./components/ShortenedForm";
 import type { ShortLink } from "./types";
 
 function App() {
-  // the list of shortened links (Part 3 will swap this for useLocalStorage)
-  const [links, setLinks] = useState<ShortLink[]>([]);
+  const [links, setLinks] = useLocalStorage<ShortLink[]>("shortenedUrls", []);
 
   // called by ShortenForm when bitly sends back a short link
   function addLink(longUrl: string, shortUrl: string) {
@@ -35,7 +34,7 @@ function App() {
             ))}
           </ul>
         </section>
-
+            
         <Features />
         <Boost title="Boost Your Links Today" />
       </main>

@@ -10,8 +10,8 @@ export function useLocalStorage<T>(key: string, startValue: T) {
   // 2. every time value changes, save it
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(value));
-  }, [value, setValue]);
+  }, [key, value]);
 
   // 3. give back the same pair useState does
-  return [key, value] as const;
+  return [value, setValue] as const;
 }
